@@ -96,9 +96,16 @@ public sealed class RoutingTests
     [Test]
     public async Task HabitabilityAssessor_Scores_G()
     {
-        var system = new StarSystem("sol", "Sol", new StarCoords(0, 0, 0), SpectralClass.G);
+        var system = new StarSystem(
+            "sol",
+            "Sol",
+            new StarCoords(0, 0, 0),
+            SpectralClass.G,
+            spectralDesignation: "G2V",
+            luminositySolar: 1.0,
+            effectiveTemperatureK: 5780.0);
         var score = new HabitabilityAssessor().Assess(system);
-        await Assert.That(score.Score).IsEqualTo(90.0);
-        await Assert.That(score.Tier).IsEqualTo("prime");
+        await Assert.That(score.Score).IsGreaterThanOrEqualTo(85.0);
+        await Assert.That(score.Tier).IsEqualTo(nameof(HabitabilityTier.Prime));
     }
 }

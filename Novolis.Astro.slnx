@@ -2,6 +2,7 @@
   <Folder Name="/src/">
     <Project Path="src/Novolis.Astro.Abstractions/Novolis.Astro.Abstractions.csproj" />
     <Project Path="src/Novolis.Astro.Catalog/Novolis.Astro.Catalog.csproj" />
+    <Project Path="src/Novolis.Astro.Catalog.Data/Novolis.Astro.Catalog.Data.csproj" />
     <Project Path="src/Novolis.Astro.Routing/Novolis.Astro.Routing.csproj" />
     <Project Path="src/Novolis.Astro.Assessment/Novolis.Astro.Assessment.csproj" />
     <Project Path="src/Novolis.Astro.Overlay/Novolis.Astro.Overlay.csproj" />

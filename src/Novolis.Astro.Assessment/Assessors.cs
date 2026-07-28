@@ -16,9 +16,16 @@ public interface ISystemAssessor
     AssessmentScore Assess(StarSystem system);
 }
 
-/// <summary>Stock habitability-like scorer from spectral class heuristics.</summary>
+/// <summary>Stock habitability scorer (Kopparapu HZ + weighted stellar rating).</summary>
 public sealed class HabitabilityAssessor : ISystemAssessor
 {
+    /// <summary>Creates an assessor using the given HZ convention.</summary>
+    public HabitabilityAssessor(HabitableZoneConvention convention = HabitableZoneConvention.Conservative) =>
+        Convention = convention;
+
+    /// <summary>HZ convention used when scoring.</summary>
+    public HabitableZoneConvention Convention { get; }
+
     /// <inheritdoc />
     public string Facet => "habitability";
 
@@ -26,16 +33,11 @@ public sealed class HabitabilityAssessor : ISystemAssessor
     public AssessmentScore Assess(StarSystem system)
     {
         ArgumentNullException.ThrowIfNull(system);
-        var (score, tier, reason) = system.SpectralClass switch
-        {
-            SpectralClass.G => (90.0, "prime", "G-class primary"),
-            SpectralClass.K => (80.0, "open", "K-class primary"),
-            SpectralClass.F => (70.0, "open", "F-class primary"),
-            SpectralClass.M => (40.0, "marginal", "M-class primary"),
-            SpectralClass.A or SpectralClass.B or SpectralClass.O => (30.0, "hostile", "hot primary"),
-            _ => (25.0, "excluded", "unsupported spectral class")
-        };
-        return new AssessmentScore(score, tier, [reason]);
+        var rating = system.AssessHabitability(Convention);
+        return new AssessmentScore(
+            rating.Score,
+            rating.Tier.ToString(),
+            rating.Reasons);
     }
 }
 

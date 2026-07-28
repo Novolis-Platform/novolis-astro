@@ -8,6 +8,10 @@
       "paths": ["src/Novolis.Astro.Catalog/**", "Directory.Build.props", "Directory.Packages.props", "global.json"],
       "project": "src/Novolis.Astro.Catalog/Novolis.Astro.Catalog.csproj"
     },
+    "Novolis.Astro.Catalog.Data": {
+      "paths": ["src/Novolis.Astro.Catalog.Data/**", "Directory.Build.props", "Directory.Packages.props", "global.json"],
+      "project": "src/Novolis.Astro.Catalog.Data/Novolis.Astro.Catalog.Data.csproj"
+    },
     "Novolis.Astro.Routing": {
       "paths": ["src/Novolis.Astro.Routing/**", "Directory.Build.props", "Directory.Packages.props", "global.json"],
       "project": "src/Novolis.Astro.Routing/Novolis.Astro.Routing.csproj"

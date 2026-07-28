@@ -11,6 +11,7 @@
   <ItemGroup>
     <ProjectReference Include="../../src/Novolis.Astro.Abstractions/Novolis.Astro.Abstractions.csproj" />
     <ProjectReference Include="../../src/Novolis.Astro.Catalog/Novolis.Astro.Catalog.csproj" />
+    <ProjectReference Include="../../src/Novolis.Astro.Catalog.Data/Novolis.Astro.Catalog.Data.csproj" />
     <ProjectReference Include="../../src/Novolis.Astro.Routing/Novolis.Astro.Routing.csproj" />
     <ProjectReference Include="../../src/Novolis.Astro.Assessment/Novolis.Astro.Assessment.csproj" />
     <ProjectReference Include="../../src/Novolis.Astro.Overlay/Novolis.Astro.Overlay.csproj" />

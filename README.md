@@ -8,6 +8,7 @@
 |---------|---------|----------------|
 | `Novolis.Astro.Abstractions` | `dotnet add package Novolis.Astro.Abstractions` | [README](https://github.com/Novolis-Platform/novolis-astro/blob/main/src/Novolis.Astro.Abstractions/README.md) |
 | `Novolis.Astro.Catalog` | `dotnet add package Novolis.Astro.Catalog` | [README](https://github.com/Novolis-Platform/novolis-astro/blob/main/src/Novolis.Astro.Catalog/README.md) |
+| `Novolis.Astro.Catalog.Data` | `dotnet add package Novolis.Astro.Catalog.Data` | [README](https://github.com/Novolis-Platform/novolis-astro/blob/main/src/Novolis.Astro.Catalog.Data/README.md) |
 | `Novolis.Astro.Routing` | `dotnet add package Novolis.Astro.Routing` | [README](https://github.com/Novolis-Platform/novolis-astro/blob/main/src/Novolis.Astro.Routing/README.md) |
 | `Novolis.Astro.Assessment` | `dotnet add package Novolis.Astro.Assessment` | [README](https://github.com/Novolis-Platform/novolis-astro/blob/main/src/Novolis.Astro.Assessment/README.md) |
 | `Novolis.Astro.Overlay` | `dotnet add package Novolis.Astro.Overlay` | [README](https://github.com/Novolis-Platform/novolis-astro/blob/main/src/Novolis.Astro.Overlay/README.md) |

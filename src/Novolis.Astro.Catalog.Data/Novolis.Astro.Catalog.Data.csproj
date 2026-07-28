@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <PackageId>Novolis.Astro.Catalog.Data</PackageId>
+    <IsPackable>true</IsPackable>
+    <Description>Pregenerated stellar catalog packs (Near-Sol, local HYG slice).</Description>
+    <RootNamespace>Novolis.Astro.Catalog.Data</RootNamespace>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Novolis.Astro.Catalog\Novolis.Astro.Catalog.csproj" />
+  </ItemGroup>
+</Project>

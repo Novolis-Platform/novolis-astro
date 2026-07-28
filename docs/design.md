@@ -7,8 +7,17 @@
 | Owns | Does not own |
 |------|----------------|
 | Catalog positions (ly/pc), hop graphs, route accumulation | Force/`dt` dynamics (Physics) |
+| Pregenerated catalog packs (`Catalog.Data`) | Campaign fiction overlays / route maps |
 | Pluggable hop cost and transit/speed profiles | Avalonia UI |
-| Assessment scorers and campaign overlays | Product content packs |
+| Assessment scorers (Kopparapu HZ + habitability) | Product content packs |
+
+## Catalog data
+
+`Novolis.Astro.Catalog` is the store/query/import layer. `Novolis.Astro.Catalog.Data` ships frozen packs (`NearSol100`, `HygLocal1901`) as committed `*.g.cs` (refresh via `tools/pregen-catalog.cs`).
+
+## Habitability
+
+`StarSystem.EstimateHabitableZone` / `AssessHabitability` use Kopparapu et al. 2013 (erratum coeffs). Conservative = runaway greenhouse → maximum greenhouse.
 
 ## Routing
 
