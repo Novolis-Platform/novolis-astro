@@ -2,7 +2,7 @@
   <PropertyGroup>
     <PackageId>Novolis.Astro.Assessment</PackageId>
     <IsPackable>true</IsPackable>
-    <Description>Pluggable star-system assessment scorers for worldbuilding and games.</Description>
+    <Description>Pluggable star-system assessment scorers and deterministic SystemProfile generation (elements + economic potentials) for worldbuilding and games.</Description>
     <RootNamespace>Novolis.Astro.Assessment</RootNamespace>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
   </PropertyGroup>

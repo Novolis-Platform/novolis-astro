@@ -10,6 +10,7 @@
 | Pregenerated catalog packs (`Catalog.Data`) | Campaign fiction overlays / route maps |
 | Pluggable hop cost and transit/speed profiles | Avalonia UI |
 | Assessment scorers (Kopparapu HZ + habitability) | Product content packs |
+| Deterministic `SystemProfile` generation (elements + economic potentials) | In-system travel / locations; Economy facility binding |
 
 ## Catalog data
 
@@ -18,6 +19,10 @@
 ## Habitability
 
 `StarSystem.EstimateHabitableZone` / `AssessHabitability` use Kopparapu et al. 2013 (erratum coeffs). Conservative = runaway greenhouse → maximum greenhouse.
+
+## System profiles
+
+`SystemProfileGenerator` mixes a campaign seed with system id (and optional L/Teff) into a SplitMix64 PRNG, rolls element abundances from spectral biases, and derives Mining / Volatiles / Agriculture / Industry potentials. Agriculture is hard-gated to 0 for `Excluded`/`Hostile` habitability. Hosts (e.g. NearSol) map potentials to Economy seeding; Astro does not reference Economy.
 
 ## Routing
 
