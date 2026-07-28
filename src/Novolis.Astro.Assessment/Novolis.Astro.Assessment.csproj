@@ -8,5 +8,6 @@
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\Novolis.Astro.Catalog\Novolis.Astro.Catalog.csproj" />
+    <ProjectReference Include="..\Novolis.Astro.Routing\Novolis.Astro.Routing.csproj" />
   </ItemGroup>
 </Project>
