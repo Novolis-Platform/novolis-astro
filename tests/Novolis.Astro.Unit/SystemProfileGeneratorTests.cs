@@ -106,9 +106,9 @@ public sealed class SystemProfileGeneratorTests
         var zeroAgri = profiles.Count(p => p.Potential.Agriculture == 0.0);
 
         // Snapshot: regeneration with CampaignSeed 1001 must not drift silently.
-        await Assert.That(agriCapable).IsEqualTo(19);
-        await Assert.That(miningCapable).IsEqualTo(55);
-        await Assert.That(zeroAgri).IsEqualTo(52);
+        await Assert.That(agriCapable).IsEqualTo(36);
+        await Assert.That(miningCapable).IsEqualTo(73);
+        await Assert.That(zeroAgri).IsEqualTo(7);
 
         foreach (var p in profiles.Where(p =>
                      p.Habitability.Tier is HabitabilityTier.Excluded or HabitabilityTier.Hostile))

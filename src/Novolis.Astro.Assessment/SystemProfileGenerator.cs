@@ -25,6 +25,7 @@ public sealed class SystemProfileGenerator
         var rng = new SplitMix64(effectiveSeed);
         var habitability = system.AssessHabitability(Convention);
         var elements = RollElements(system.SpectralClass, ref rng);
+        elements = EnsureHabitableRocky(elements, habitability, ref rng);
         var potential = DerivePotential(elements, habitability);
         return new SystemProfile(system.Id, effectiveSeed, elements, potential, habitability);
     }
@@ -57,6 +58,26 @@ public sealed class SystemProfileGenerator
         MaybeAdd(elements, SystemElementKind.GasGiant, gasBias, ref rng);
         MaybeAdd(elements, SystemElementKind.AsteroidBelt, beltBias, ref rng);
         MaybeAdd(elements, SystemElementKind.VolatileReservoir, volatileBias, ref rng);
+
+        return elements;
+    }
+
+    private static List<SystemElement> EnsureHabitableRocky(
+        List<SystemElement> elements,
+        HabitabilityRating habitability,
+        ref SplitMix64 rng)
+    {
+        if (habitability.Tier is HabitabilityTier.Excluded or HabitabilityTier.Hostile)
+        {
+            return elements;
+        }
+
+        if (habitability.Tier >= HabitabilityTier.Candidate
+            && elements.All(e => e.Kind != SystemElementKind.RockyWorld))
+        {
+            // Candidate+ hosts always have at least one rocky body for agri potential.
+            elements.Add(new SystemElement(SystemElementKind.RockyWorld, 0.35 + rng.NextDouble() * 0.35));
+        }
 
         if (elements.Count == 0)
         {
