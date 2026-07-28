@@ -1,0 +1,28 @@
+{
+  "packages": {
+    "Novolis.Astro.Abstractions": {
+      "paths": ["src/Novolis.Astro.Abstractions/**", "Directory.Build.props", "Directory.Packages.props", "global.json"],
+      "project": "src/Novolis.Astro.Abstractions/Novolis.Astro.Abstractions.csproj"
+    },
+    "Novolis.Astro.Catalog": {
+      "paths": ["src/Novolis.Astro.Catalog/**", "Directory.Build.props", "Directory.Packages.props", "global.json"],
+      "project": "src/Novolis.Astro.Catalog/Novolis.Astro.Catalog.csproj"
+    },
+    "Novolis.Astro.Routing": {
+      "paths": ["src/Novolis.Astro.Routing/**", "Directory.Build.props", "Directory.Packages.props", "global.json"],
+      "project": "src/Novolis.Astro.Routing/Novolis.Astro.Routing.csproj"
+    },
+    "Novolis.Astro.Assessment": {
+      "paths": ["src/Novolis.Astro.Assessment/**", "Directory.Build.props", "Directory.Packages.props", "global.json"],
+      "project": "src/Novolis.Astro.Assessment/Novolis.Astro.Assessment.csproj"
+    },
+    "Novolis.Astro.Overlay": {
+      "paths": ["src/Novolis.Astro.Overlay/**", "Directory.Build.props", "Directory.Packages.props", "global.json"],
+      "project": "src/Novolis.Astro.Overlay/Novolis.Astro.Overlay.csproj"
+    },
+    "Novolis.Astro.Plotting": {
+      "paths": ["src/Novolis.Astro.Plotting/**", "Directory.Build.props", "Directory.Packages.props", "global.json"],
+      "project": "src/Novolis.Astro.Plotting/Novolis.Astro.Plotting.csproj"
+    }
+  }
+}

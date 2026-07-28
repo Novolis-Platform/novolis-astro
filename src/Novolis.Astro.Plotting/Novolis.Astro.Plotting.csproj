@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <PackageId>Novolis.Astro.Plotting</PackageId>
+    <IsPackable>true</IsPackable>
+    <Description>Headless stellar path projection and SVG/TSV export.</Description>
+    <RootNamespace>Novolis.Astro.Plotting</RootNamespace>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Novolis.Astro.Routing\Novolis.Astro.Routing.csproj" />
+  </ItemGroup>
+</Project>

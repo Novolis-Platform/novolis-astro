@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <PackageId>Novolis.Astro.Assessment</PackageId>
+    <IsPackable>true</IsPackable>
+    <Description>Pluggable star-system assessment scorers for worldbuilding and games.</Description>
+    <RootNamespace>Novolis.Astro.Assessment</RootNamespace>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Novolis.Astro.Catalog\Novolis.Astro.Catalog.csproj" />
+  </ItemGroup>
+</Project>

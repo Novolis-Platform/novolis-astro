@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <PackageId>Novolis.Astro.Routing</PackageId>
+    <IsPackable>true</IsPackable>
+    <Description>Interstellar route graphs, pluggable hop cost/transit models, planner and accumulation.</Description>
+    <RootNamespace>Novolis.Astro.Routing</RootNamespace>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Novolis.Astro.Catalog\Novolis.Astro.Catalog.csproj" />
+  </ItemGroup>
+</Project>

@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <PackageId>Novolis.Astro.Catalog</PackageId>
+    <IsPackable>true</IsPackable>
+    <Description>Star system catalog store, queries, and import adapters.</Description>
+    <RootNamespace>Novolis.Astro.Catalog</RootNamespace>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Novolis.Astro.Abstractions\Novolis.Astro.Abstractions.csproj" />
+  </ItemGroup>
+</Project>

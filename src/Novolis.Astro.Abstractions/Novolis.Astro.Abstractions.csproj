@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <PackageId>Novolis.Astro.Abstractions</PackageId>
+    <IsPackable>true</IsPackable>
+    <Description>Core stellar coordinates, hop/transit evaluation contracts for Novolis.Astro.</Description>
+    <RootNamespace>Novolis.Astro.Abstractions</RootNamespace>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+  </PropertyGroup>
+</Project>
