@@ -23,3 +23,19 @@ var near = catalog.NeighborsWithin(new StarCoords(0, 0, 0), radiusLy: 12);
 ```
 
 `All` is an ordered `IReadOnlyList<StarSystem>`. Prefer `StarCatalog.From(...)` for stable pack order.
+
+## API
+
+| Type | Role |
+|------|------|
+| `StarSystem` | `Id`, `Name`, `Coords`, `SpectralClass`, luminosity/Teff tags |
+| `StarCatalog` | `From`, `Add`, `TryGet`, `GetRequired`, `NeighborsWithin`, `All`, `Count` |
+| `HygCsvImporter` | `Import(csvText, catalog)`, `Enumerate(reader)` |
+
+## Related
+
+| Package | When to use |
+|---------|-------------|
+| `Novolis.Astro.Catalog.Data` | Pregenerated `NearSol100`, `HygLocal1901` packs |
+| `Novolis.Astro.Routing` | Build hop graphs from catalog systems |
+| `Novolis.Astro.Overlay` | Alias bindings validated against catalog ids |

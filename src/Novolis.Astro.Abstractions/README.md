@@ -1,6 +1,6 @@
 # Novolis.Astro.Abstractions
 
-Core stellar coordinates and hop/transit evaluation contracts.
+Core stellar coordinates and hop/transit evaluation contracts shared by catalog, routing, and assessment packages.
 
 ## Install
 
@@ -17,3 +17,22 @@ var a = new StarCoords(0, 0, 0);
 var b = new StarCoords(4.3, 0, 0);
 var ly = StarCoords.Distance(a, b);
 ```
+
+## API
+
+| Type | Role |
+|------|------|
+| `SystemId` | Opaque catalog key (`string` ↔ implicit conversion) |
+| `StarCoords` | Galactic XYZ in light-years; `Distance`, `DistanceFromOrigin` |
+| `SpectralClass` | Stellar class enum (`G`, `K`, `M`, …) |
+| `HopEvaluation` | Feasibility, cost, distance, band tag from a hop model |
+| `TransitEvaluation` | Duration and resource delta from a transit profile |
+| `IHopCostModel` | `Evaluate(from, to, distanceLy)` |
+| `ITransitProfile` | `Evaluate(from, to, distanceLy, bandTag?)` |
+
+## Related
+
+| Package | When to use |
+|---------|-------------|
+| `Novolis.Astro.Catalog` | `StarSystem` records and spatial queries |
+| `Novolis.Astro.Routing` | Stock cost models and Dijkstra planning |
