@@ -1,3 +1,11 @@
+<!-- novolis-pkg-brand:start -->
+<p align="center">
+  <a href="https://github.com/Novolis-Platform/novolis-astro">
+    <img src="https://raw.githubusercontent.com/Novolis-Platform/.github/main/brand/logo-icon.svg" width="72" alt="Novolis"/>
+  </a>
+</p>
+<!-- novolis-pkg-brand:end -->
+
 # Novolis.Astro.Catalog
 
 In-memory star system catalog with spatial neighbor queries and a HYG-like CSV importer.
@@ -39,3 +47,4 @@ var near = catalog.NeighborsWithin(new StarCoords(0, 0, 0), radiusLy: 12);
 | `Novolis.Astro.Catalog.Data` | Pregenerated `NearSol100`, `HygLocal1901` packs |
 | `Novolis.Astro.Routing` | Build hop graphs from catalog systems |
 | `Novolis.Astro.Overlay` | Alias bindings validated against catalog ids |
+

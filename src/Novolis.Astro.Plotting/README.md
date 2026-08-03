@@ -1,3 +1,11 @@
+<!-- novolis-pkg-brand:start -->
+<p align="center">
+  <a href="https://github.com/Novolis-Platform/novolis-astro">
+    <img src="https://raw.githubusercontent.com/Novolis-Platform/.github/main/brand/logo-icon.svg" width="72" alt="Novolis"/>
+  </a>
+</p>
+<!-- novolis-pkg-brand:end -->
+
 # Novolis.Astro.Plotting
 
 Headless orthographic XZ projection and SVG/TSV export for stellar routes — no UI dependencies.
@@ -34,3 +42,4 @@ File.WriteAllText("route.svg", svg);
 |---------|-------------|
 | `Novolis.Astro.Routing` | Produce waypoint lists from Dijkstra planning |
 | `Novolis.Avalonia.StarMap` | Interactive Avalonia star map (dogfood: StarMapLab) |
+

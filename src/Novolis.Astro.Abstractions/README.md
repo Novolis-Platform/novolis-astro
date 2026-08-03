@@ -1,3 +1,11 @@
+<!-- novolis-pkg-brand:start -->
+<p align="center">
+  <a href="https://github.com/Novolis-Platform/novolis-astro">
+    <img src="https://raw.githubusercontent.com/Novolis-Platform/.github/main/brand/logo-icon.svg" width="72" alt="Novolis"/>
+  </a>
+</p>
+<!-- novolis-pkg-brand:end -->
+
 # Novolis.Astro.Abstractions
 
 Core stellar coordinates and hop/transit evaluation contracts shared by catalog, routing, and assessment packages.
@@ -36,3 +44,4 @@ var ly = StarCoords.Distance(a, b);
 |---------|-------------|
 | `Novolis.Astro.Catalog` | `StarSystem` records and spatial queries |
 | `Novolis.Astro.Routing` | Stock cost models and Dijkstra planning |
+

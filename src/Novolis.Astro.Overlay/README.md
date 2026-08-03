@@ -1,3 +1,11 @@
+<!-- novolis-pkg-brand:start -->
+<p align="center">
+  <a href="https://github.com/Novolis-Platform/novolis-astro">
+    <img src="https://raw.githubusercontent.com/Novolis-Platform/.github/main/brand/logo-icon.svg" width="72" alt="Novolis"/>
+  </a>
+</p>
+<!-- novolis-pkg-brand:end -->
+
 # Novolis.Astro.Overlay
 
 Campaign and worldbuilding overlays: bind fictional aliases and optional labels to canonical catalog system ids without duplicating stellar data.
@@ -36,3 +44,4 @@ var errors = overlay.Validate(catalog);
 |---------|-------------|
 | `Novolis.Astro.Catalog` | Source `StarCatalog` for validation and lookup |
 | `Novolis.Astro.Assessment` | Habitability/strategic scoring on resolved systems |
+

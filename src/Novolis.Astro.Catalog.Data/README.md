@@ -1,3 +1,11 @@
+<!-- novolis-pkg-brand:start -->
+<p align="center">
+  <a href="https://github.com/Novolis-Platform/novolis-astro">
+    <img src="https://raw.githubusercontent.com/Novolis-Platform/.github/main/brand/logo-icon.svg" width="72" alt="Novolis"/>
+  </a>
+</p>
+<!-- novolis-pkg-brand:end -->
+
 # Novolis.Astro.Catalog.Data
 
 Pregenerated stellar catalog packs as stable `IReadOnlyList<StarSystem>` sequences.
@@ -46,3 +54,4 @@ Commit the regenerated `src/Novolis.Astro.Catalog.Data/Generated/*.g.cs` files.
 |---------|-------------|
 | `Novolis.Astro.Catalog` | Runtime catalog queries and CSV import |
 | `Novolis.Astro.Routing` | Route planning over pack systems |
+

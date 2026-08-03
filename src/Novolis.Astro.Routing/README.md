@@ -1,3 +1,11 @@
+<!-- novolis-pkg-brand:start -->
+<p align="center">
+  <a href="https://github.com/Novolis-Platform/novolis-astro">
+    <img src="https://raw.githubusercontent.com/Novolis-Platform/.github/main/brand/logo-icon.svg" width="72" alt="Novolis"/>
+  </a>
+</p>
+<!-- novolis-pkg-brand:end -->
+
 # Novolis.Astro.Routing
 
 Interstellar route graphs with pluggable hop cost and transit profiles, Dijkstra planning, and route accumulation.
@@ -39,3 +47,4 @@ var route = RoutePlanner.Find("sol", "proxima", graph,
 | `Novolis.Astro.Abstractions` | `IHopCostModel`, `ITransitProfile` contracts |
 | `Novolis.Astro.Catalog` | `StarCatalog.All` input for graph build |
 | `Novolis.Astro.Plotting` | Export `RouteResult` waypoints to SVG/TSV |
+

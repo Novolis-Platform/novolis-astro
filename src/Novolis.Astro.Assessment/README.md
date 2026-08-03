@@ -1,3 +1,11 @@
+<!-- novolis-pkg-brand:start -->
+<p align="center">
+  <a href="https://github.com/Novolis-Platform/novolis-astro">
+    <img src="https://raw.githubusercontent.com/Novolis-Platform/.github/main/brand/logo-icon.svg" width="72" alt="Novolis"/>
+  </a>
+</p>
+<!-- novolis-pkg-brand:end -->
+
 # Novolis.Astro.Assessment
 
 Pluggable system assessors plus Kopparapu-based habitable-zone and habitability rating.
@@ -48,3 +56,4 @@ var sol = new StarSystem("sol", "Sol", default, SpectralClass.G,
 var zone = sol.EstimateHabitableZone();
 var rating = sol.AssessHabitability();
 ```
+
