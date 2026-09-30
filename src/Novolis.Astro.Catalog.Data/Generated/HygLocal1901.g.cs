@@ -7,9 +7,11 @@ using Novolis.Astro.Catalog;
 
 namespace Novolis.Astro.Catalog.Data;
 
+/// <summary>Generated HYG-style local star catalog. XYZ converted pc to ly from hyg-local.json.</summary>
+[System.CodeDom.Compiler.GeneratedCode("Novolis", "1.0")]
 public static partial class CatalogPacks
 {
-    /// <summary>HYG-style local slice; XYZ converted pc→ly from hyg-local.json</summary>
+    /// <summary>Generated HYG-style local slice. XYZ converted pc to ly from hyg-local.json.</summary>
     public static IReadOnlyList<StarSystem> HygLocal1901 { get; } = CreateHygLocal1901();
 
     static StarSystem[] CreateHygLocal1901()
