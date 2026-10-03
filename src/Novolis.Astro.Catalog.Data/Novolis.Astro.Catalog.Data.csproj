@@ -9,4 +9,7 @@
   <ItemGroup>
     <ProjectReference Include="..\Novolis.Astro.Catalog\Novolis.Astro.Catalog.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Generated\*.ndjson" />
+  </ItemGroup>
 </Project>
